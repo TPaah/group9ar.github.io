@@ -1,7 +1,7 @@
-import * as THREE from '../../libs/three/three.module.js';
-import { Stats } from '../../libs/stats.module.js';
-import { OrbitControls } from '../../libs/three/jsm/OrbitControls.js';
-import { ARButton } from '../../libs/three/jsm/ARButton.js';
+import * as THREE from '../group9ar.github.io/libs/three/three.module.js';
+import { Stats } from '../group9ar.github.io/libs/stats.module.js';
+import { OrbitControls } from '../group9ar.github.io/libs/three/jsm/OrbitControls.js';
+import { ARButton } from '../group9ar.github.io/libs/ARButton.js';
 
 
 class App{
