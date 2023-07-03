@@ -75,7 +75,7 @@ class App{
         controller.addEventListener('select', OnSelect);
         this.scene.add(controller);
 
-        this.renderer.setAnimationLoop(this.renderer.bind(this));
+        this.renderer.setAnimationLoop(this.render.bind(this));
 
         this.renderer.setAnimationLoop( this.render.bind(this) );
     }
