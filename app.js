@@ -57,11 +57,6 @@ class App{
     
     setupXR(){
         this.renderer.xr.enabled = true;
-        camera = addCamera()
-        let group = new THREE.Group()
-        group.add(camera)
-        group.position.set(50, 100, 50)
-        scene.add(group)
 
         const self = this;
         let controller;
@@ -101,18 +96,6 @@ class App{
     
 
 
-}
-
-function addCamera() {
-    const camera = new THREE.PerspectiveCamera(
-        90,
-        window.innerWidth / window.innerHeight,
-        0.1,
-        1000
-    )
-    camera.position.set(50, 100, 50)
-    camera.lookAt(0, 1, 15)
-    return camera
 }
 
 export { App };
