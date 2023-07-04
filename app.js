@@ -5,6 +5,7 @@ import { ARButton } from '../group9ar.github.io/libs/ARButton.js';
 
 
 class App{
+    
 	constructor(){
 		const container = document.createElement( 'div' );
 		document.body.appendChild( container );
@@ -97,19 +98,21 @@ class App{
         this.renderer.render( this.scene, this.camera );
     }
 
-    addCamera() {
-        const camera = new THREE.PerspectiveCamera(
-            90,
-            window.innerWidth / window.innerHeight,
-            0.1,
-            1000
-        )
-        camera.position.set(50, 100, 50)
-        camera.lookAt(0, 1, 15)
-        return camera
-    }
+    
 
 
+}
+
+function addCamera() {
+    const camera = new THREE.PerspectiveCamera(
+        90,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+    )
+    camera.position.set(50, 100, 50)
+    camera.lookAt(0, 1, 15)
+    return camera
 }
 
 export { App };
