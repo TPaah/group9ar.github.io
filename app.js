@@ -56,6 +56,7 @@ class App{
     
     setupXR(){
         this.renderer.xr.enabled = true;
+        this.camera.xr.enabled = true;
 
         const self = this;
         let controller;
