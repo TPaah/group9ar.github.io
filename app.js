@@ -77,8 +77,6 @@ class App{
         this.scene.add(controller);
 
         this.renderer.setAnimationLoop(this.render.bind(this));
-
-        this.renderer.setAnimationLoop( this.render.bind(this) );
     }
     
     resize(){
